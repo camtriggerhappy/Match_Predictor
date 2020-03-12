@@ -8,3 +8,7 @@ Data to store for a team
     Scores for the last several matches
     Average Scores
     Match #s
+
+TODO:
+    add in data gather:
+        Matches and what teams are in them

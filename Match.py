@@ -18,21 +18,30 @@ class Match:
 
 
     def Update(self,NewTeam,ReplacedTeam):
-        for i in Teams:
-            if Teams[i] == ReplacedTeam:
-                Teams[i] = NewTeam
+        for i in RedTeams:
+            if RedTeams[i] == ReplacedTeam:
+                RedTeams[i] = NewTeam
+
+        for x in BlueTeams:
+            if BlueTeams[x] == ReplacedTeam:
+                BlueTeams[x] = NewTeam
 
 
     def Result(self):
         BlueScore = 0
         RedScore = 0
+        
         for Playing in BlueTeams:
             BlueScore += BlueTeams[Playing].FindAverage()
+
         for Playing in RedTeams:
             RedScore += RedTeams[Playing].FindAverage()
+
         if BlueScore > RedScore:
             return Victor.BlueWins
+
         if BlueScore < RedScore:
             return Victor.RedWins
+
         if BlueScore == RedScore:
             return Victor.Tie
