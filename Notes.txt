@@ -1,0 +1,10 @@
+Will use: 
+    The blue alliance http requests Api
+    and python requests api
+
+
+
+Data to store for a team 
+    Scores for the last several matches
+    Average Scores
+    Match #s
